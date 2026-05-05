@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Tajawal", ui-sans-serif, system-ui, sans-serif;
+  --color-royal-gold: #D4AF37;
+  --color-navy-blue: #002147;
+  --color-navy-deep: #001529;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-navy-blue antialiased;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F1D592 50%, #B8860B 100%);
+}
+
+.navy-gradient {
+  background: linear-gradient(135deg, #002147 0%, #001529 100%);
+}
+
+.glass-card {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
